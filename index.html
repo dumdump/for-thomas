@@ -30,7 +30,15 @@
     </div>
     <script>
       var passwordInput = document.getElementById("password-input");
-      
+      var submitPasswordButton = document.getElementById("submit-password");
+      var passwordFeedback = document.getElementById("password-feedback");
+      var onSubmitButtonClick = function() {
+        if (passwordInput.value === ythomascfaw) {
+          passwordFeedback.textContent = "Access Granted";
+        } else {
+          passwordFeedback.textContent = "Access Denied!";
+        };
+      }
     </script>
   </body>
 </html>

@@ -34,9 +34,11 @@
       var passwordFeedback = document.getElementById("password-feedback");
       var onSubmitButtonClick = function() {
         if (passwordInput.value === "ythomascfaw") {
-          passwordFeedback.textContent = "Access Granted";
+          passwordFeedback.textContent = "Access Granted!";
+          passwordFeedback.style.color = "green";
         } else {
           passwordFeedback.textContent = "Access Denied!";
+          passwordFeedback.style.color = "red";
         }
       };
       submitPasswordButton.addEventListener("click", onSubmitButtonClick);

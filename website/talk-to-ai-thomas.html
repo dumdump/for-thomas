@@ -89,7 +89,7 @@
       var thomasChat = document.getElementById("thomas-chat");
       $("#submit-text").on("click", function() {
         youChat.textContent = "You: " + textInput.value;
-        if (youChat.textContent === "hello") {
+        if (textInput.value === "hello") {
             thomasChat.textContent = "Hello!";
         }
       });

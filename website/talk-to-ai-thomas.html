@@ -76,7 +76,7 @@
           </div>  
         </div>
         <div id = "input-area">
-          <input type = "text" id = "text-input">
+          <input autocomplete = "on" type = "text" id = "text-input">
           <button id = "submit-text">Send ^</button>
         </div>
       </div>
@@ -87,7 +87,7 @@
       var youChat = document.getElementById("you-chat");
       var textInput = document.getElementById("text-input");
       $("#submit-text").on("click", function() {
-        youChat.textContent = textInput.value;
+        youChat.textContent = "You: " + textInput.value;
       });
     </script>
   </body>

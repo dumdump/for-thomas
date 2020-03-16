@@ -55,6 +55,7 @@
         height: 20px;
         border-radius: 5px;
         font-size: 20px;
+        transform-text: lowercase;
       }
       #submit-text {
         height: 25px;
@@ -90,7 +91,7 @@
       $("#submit-text").on("click", function() {
         youChat.textContent = "You: " + textInput.value;
         if (textInput.value === "hello") {
-            thomasChat.textContent = "Hello!";
+            thomasChat.textContent = "Thomas: " + "Hello!";
         }
       });
     </script>

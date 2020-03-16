@@ -90,11 +90,11 @@
       var thomasChat = document.getElementById("thomas-chat");
       $("#submit-text").on("click", function() {
         youChat.textContent = "You: " + textInput.value;
-        if (textInput.value === "hello" || "hi") {
+        if (textInput.value === ("hello") || ("hi") {
             thomasChat.textContent = "Thomas: " + "Hello!";
         } else {
           thomasChat.textContent = "Thomas: "+ "Sorry, I did not understand.";
-        }
+        };
       });
     </script>
   </body>

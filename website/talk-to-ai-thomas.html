@@ -86,8 +86,12 @@
       var submitText = document.getElementById("submit-text");
       var youChat = document.getElementById("you-chat");
       var textInput = document.getElementById("text-input");
+      var thomasChat = document.getElementById("thomas-chat");
       $("#submit-text").on("click", function() {
         youChat.textContent = "You: " + textInput.value;
+        if (youChat.textContent === "hello"||"Hello"||"hello."||"Hello."||"hello!||"Hello!") {
+            thomasChat.textContent = "Hello!";
+        }
       });
     </script>
   </body>

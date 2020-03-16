@@ -17,6 +17,10 @@
         font-family: arial, helvetica, sans-serif;
         text-align: center;
       }
+      #game {
+        margin-top: 30px;
+        margin-right: 30px;
+      }
     </style>
   </head>
   <body>
@@ -25,6 +29,19 @@
         <h1 id = "game-heading">Talk To A.I Thomas!</h1>
         <div id = "game-description">A.I. Thomas is based on what he says in real life</div>
       </div>  
+      <div id = "game">
+        <div id = "chat">
+          <div id = "you-chat">
+          </div>
+          <br>
+          <div id = "thomas-chat">
+          </div>  
+        </div>
+        <div id = "input-area">
+          <input type = "text" id = "text-input">
+          <button id = "submit-text">Send ^</button>
+        </div>
+      </div>
     </div>
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>

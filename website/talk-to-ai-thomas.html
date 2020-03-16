@@ -77,7 +77,7 @@
           </div>  
         </div>
         <div id = "input-area">
-          <input placeholder = "type a message ex. Hello!" autocomplete = "on" type = "text" id = "text-input">
+          <input placeholder = "No Puncuation" autocomplete = "on" type = "text" id = "text-input">
           <button id = "submit-text">Send ^</button>
         </div>
       </div>
@@ -90,8 +90,10 @@
       var thomasChat = document.getElementById("thomas-chat");
       $("#submit-text").on("click", function() {
         youChat.textContent = "You: " + textInput.value;
-        if (textInput.value === "hello") {
+        if (textInput.value === "hello" || "hi") {
             thomasChat.textContent = "Thomas: " + "Hello!";
+        } else {
+          thomasChat.textContent = "Thomas: "+ "Sorry, I did not understand.";
         }
       });
     </script>

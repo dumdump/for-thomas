@@ -89,7 +89,7 @@
       $("#submit-text").on("click", function() {
         youChat.textContent = "You: " + textInput.value;
         thomasPicker = Math.floor((Math.random() * 3) + 1);
-        if (textInput.value.toLowerCase() === "hello" || textInput.value.toLowerCase() === "hi") {
+        if (textInput.value.toLowerCase().replaceAll("\\p{Punct}","") === "hello" || textInput.value.toLowerCase() === "hi") {
           if (thomasPicker === 1) {
             thomasChat.textContent = "Thomas: " + "Hello!";
           } else if (thomasPicker === 2) {

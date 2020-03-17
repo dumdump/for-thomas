@@ -74,7 +74,7 @@
           </div>  
         </div>
         <div id = "input-area">
-          <input onkeyup="this.value = this.value.toLowerCase();" placeholder = "No Punctuation" autocomplete = "on" type = "text" id = "text-input">
+          <input placeholder = "No Punctuation" autocomplete = "on" type = "text" id = "text-input">
           <button id = "submit-text">Send ^</button>
         </div>
       </div>
@@ -83,7 +83,7 @@
     <script>
       var submitText = document.getElementById("submit-text");
       var youChat = document.getElementById("you-chat");
-      var textInput = document.getElementById("text-input");
+      var textInput = document.getElementById("text-input").toLowerCase();
       var thomasChat = document.getElementById("thomas-chat");
       $("#submit-text").on("click", function() {
         youChat.textContent = "You: " + textInput.value;

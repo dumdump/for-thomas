@@ -84,7 +84,7 @@
       var submitText = document.getElementById("submit-text");
       var youChat = document.getElementById("you-chat");
       var textInput = document.getElementById("text-input");
-      var thomasPicker = Math.floor((Math.random) * 3) + 1;
+      var thomasPicker = Math.floor((Math.random() * 3) + 1);
       var thomasChat = document.getElementById("thomas-chat");
       $("#submit-text").on("click", function() {
         youChat.textContent = "You: " + textInput.value;

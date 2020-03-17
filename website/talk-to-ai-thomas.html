@@ -97,6 +97,22 @@
           } else {
             thomasChat.textContent = "Thomas: " + "Hola.";
           };
+        } else if (textInput.value.toLowerCase() === "how are you") {
+          if (thomasPicker === 1) {
+            thomasChat.textContent = "Thomas: " + "Good!";
+          } else if (thomasPicker === 2) {
+            thomasChat.textContent = "Thomas: " + "Okay.";
+          } else {
+            thomasChat.textContent = "Thomas: " + "Bored.";
+          };
+        } else if (textInput.value.toLowerCase() === "what are you doing" || textInput.value.toLowerCase() === "what are you doing right now") {
+          if (thomasPicker === 1) {
+            thomasChat.textContent = "Thomas: " + "Nothing.";
+          } else if (thomasPicker === 2) {
+            thomasChat.textContent = "Thomas: " + "Talking to you.";
+          } else {
+            thomasChat.textContent = "Thomas: " + "Texting you.";
+          };
         } else {
           thomasChat.textContent = "Thomas: "+ "Sorry, I did not understand.";
         };

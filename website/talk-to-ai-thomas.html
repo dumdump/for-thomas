@@ -87,7 +87,7 @@
       var thomasChat = document.getElementById("thomas-chat");
       $("#submit-text").on("click", function() {
         youChat.textContent = "You: " + textInput.value;
-        if (textInput.value === "hello" || textInput.value === "hi") {
+        if (youChat.value === "hello" || youChat.value === "hi") {
             thomasChat.textContent = "Thomas: " + "Hello!";
         } else {
           thomasChat.textContent = "Thomas: "+ "Sorry, I did not understand.";

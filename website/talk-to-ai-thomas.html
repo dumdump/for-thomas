@@ -89,7 +89,7 @@
       $("#submit-text").on("click", function() {
         youChat.textContent = "You: " + textInput.value;
         thomasPicker = Math.floor((Math.random() * 3) + 1);
-        if (textInput.value.replace(/[.,\/#!$%\^&\*;:{}=\-_`~() ]/g,"").toLowerCase() === "hello" || textInput.value.toLowerCase() === "hi") {
+        if (textInput.value.replace(/[.,\/#!$%\^&\*;:{}=\-_`~() ]/g,"").toLowerCase() === "hello" || textInput.value.replace(/[.,\/#!$%\^&\*;:{}=\-_`~() ]/g,"").toLowerCase() === "hi") {
           if (thomasPicker === 1) {
             thomasChat.textContent = "Thomas: " + "Hello!";
           } else if (thomasPicker === 2) {
@@ -97,7 +97,7 @@
           } else {
             thomasChat.textContent = "Thomas: " + "Hola.";
           };
-        } else if (textInput.value.toLowerCase() === "how are you") {
+        } else if (textInput.value.replace(/[.,\/#!$%\^&\*;:{}=\-_`~() ]/g,"").toLowerCase() === "how are you") {
           if (thomasPicker === 1) {
             thomasChat.textContent = "Thomas: " + "Good!";
           } else if (thomasPicker === 2) {
@@ -105,7 +105,7 @@
           } else {
             thomasChat.textContent = "Thomas: " + "Bored.";
           };
-        } else if (textInput.value.toLowerCase() === "what are you doing" || textInput.value.toLowerCase() === "what are you doing right now") {
+        } else if (textInput.value.replace(/[.,\/#!$%\^&\*;:{}=\-_`~() ]/g,"").toLowerCase() === "what are you doing" || textInput.value.replace(/[.,\/#!$%\^&\*;:{}=\-_`~() ]/g,"").toLowerCase() === "what are you doing right now") {
           if (thomasPicker === 1) {
             thomasChat.textContent = "Thomas: " + "Nothing.";
           } else if (thomasPicker === 2) {

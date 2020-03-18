@@ -86,10 +86,11 @@
       var textInput = document.getElementById("text-input");
       var thomasPicker = 0;
       var thomasChat = document.getElementById("thomas-chat");
+      var textInputWithoutPunc = textInput.value.replace(/[.,?! ]/g,"").toLowerCase();
       $("#submit-text").on("click", function() {
         youChat.textContent = "You: " + textInput.value;
         thomasPicker = Math.floor((Math.random() * 3) + 1);
-        var textInputWithoutPunc = textInput.value.replace(/[.,?! ]/g,"").toLowerCase();
+        textInputWithoutPunc = textInput.value.replace(/[.,?! ]/g,"").toLowerCase();
         if (textInputWithoutPunc === "hello" || textInputWithoutPunc === "hi") {
           if (thomasPicker === 1) {
             thomasChat.textContent = "Thomas: " + "Hello!";

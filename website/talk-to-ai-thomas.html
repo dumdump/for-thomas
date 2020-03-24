@@ -60,6 +60,14 @@
           } else {
             thomasChat.textContent = "Thomas: " + "Texting you.";
           };
+        } else if (textInputWithoutPunc === "whatisyourname" || textInputWithoutPunc === "whatsyourname") {
+          if (thomasPicker === 1) {
+            thomasChat.textContent = "Thomas: " + "You know.";
+          } else if (thomasPicker === 2) {
+            thomasChat.textContent = "Thomas: " + "Thomas.";
+          } else {
+            thomasChat.textContent = "Thomas: " + "Bad question.";
+          };
         } else {
           thomasChat.textContent = "Thomas: "+ "Sorry, I did not understand.";
         };
